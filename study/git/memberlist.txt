@@ -1,0 +1,6 @@
+
+man = {
+    park,
+    kim,
+    lee
+}
