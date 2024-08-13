@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Ch1_SingleList">
+      <UniqueIdentifier>{eebe58e0-d40a-48ec-93b5-dfb27706d257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Ch1_DoubleList">
+      <UniqueIdentifier>{42ae3e80-910b-4078-aa0a-a02453edd86b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Ch2_Array_Stack">
+      <UniqueIdentifier>{754d8784-b37b-46bd-8737-ce39feb139f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Ch2_Linked_list_Stack">
+      <UniqueIdentifier>{e9468b74-b43c-48b6-acdd-e4ee74b86f08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Ch2_Linked_list_Stack\Calculator">
+      <UniqueIdentifier>{7d85a226-d983-49c6-8f87-236695f479a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Ch4_Tree">
+      <UniqueIdentifier>{0c1914a0-7fec-4400-bcf2-194e351c7705}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LinkedList.c">
+      <Filter>소스 파일\Ch1_SingleList</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_LinkedList.c">
+      <Filter>소스 파일\Ch1_SingleList</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\source\01장\DoublyLinkedList\DoublyLinkedList.c">
+      <Filter>소스 파일\Ch1_DoubleList</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\source\01장\DoublyLinkedList\Test_DoublyLinkedList.c">
+      <Filter>소스 파일\Ch1_DoubleList</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\공부\source\02장\ArrayStack\ArrayStack.c">
+      <Filter>소스 파일\Ch2_Array_Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\공부\source\02장\ArrayStack\Test_ArrayStack.c">
+      <Filter>소스 파일\Ch2_Array_Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\공부\C Data Structure source\02장\Calculator\LinkedListStack.c">
+      <Filter>소스 파일\Ch2_Linked_list_Stack\Calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\공부\C Data Structure source\02장\Calculator\Test_Calculator.c">
+      <Filter>소스 파일\Ch2_Linked_list_Stack\Calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\공부\C Data Structure source\02장\Calculator\Calculator.c">
+      <Filter>소스 파일\Ch2_Linked_list_Stack\Calculator</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\source\01장\LinkedList\LinkedList">
+      <Filter>소스 파일\Ch1_SingleList</Filter>
+    </None>
+    <None Include="..\..\..\..\Downloads\source\01장\LinkedList\Makefile">
+      <Filter>소스 파일\Ch1_SingleList</Filter>
+    </None>
+    <None Include="..\..\..\..\Downloads\source\01장\DoublyLinkedList\DoublyLinkedList">
+      <Filter>소스 파일\Ch1_DoubleList</Filter>
+    </None>
+    <None Include="..\..\..\..\Downloads\source\01장\DoublyLinkedList\Makefile">
+      <Filter>소스 파일\Ch1_DoubleList</Filter>
+    </None>
+    <None Include="..\..\..\..\Downloads\공부\source\02장\ArrayStack\ArrayStack">
+      <Filter>소스 파일\Ch2_Array_Stack</Filter>
+    </None>
+    <None Include="..\..\..\..\Downloads\공부\source\02장\ArrayStack\Makefile">
+      <Filter>소스 파일\Ch2_Array_Stack</Filter>
+    </None>
+    <None Include="..\..\..\..\Downloads\공부\C Data Structure source\02장\Calculator\Calculator">
+      <Filter>소스 파일\Ch2_Linked_list_Stack\Calculator</Filter>
+    </None>
+    <None Include="..\..\..\..\Downloads\공부\C Data Structure source\02장\Calculator\Makefile">
+      <Filter>소스 파일\Ch2_Linked_list_Stack\Calculator</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Downloads\source\01장\LinkedList\LinkedList.h">
+      <Filter>소스 파일\Ch1_SingleList</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\source\01장\DoublyLinkedList\DoublyLInkedLIst.h">
+      <Filter>소스 파일\Ch1_DoubleList</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\공부\source\02장\ArrayStack\ArrayStack.h">
+      <Filter>소스 파일\Ch2_Array_Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\공부\C Data Structure source\02장\Calculator\LinkedListStack.h">
+      <Filter>소스 파일\Ch2_Linked_list_Stack\Calculator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\공부\C Data Structure source\02장\Calculator\Calculator.h">
+      <Filter>소스 파일\Ch2_Linked_list_Stack\Calculator</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
