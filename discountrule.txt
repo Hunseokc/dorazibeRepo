@@ -1,0 +1,7 @@
+discount member = {
+    a = 10%
+    b = 8%
+    c = 5%
+    d = 3%
+    e = 1%
+}
