@@ -1,6 +1,0 @@
-
-man = {
-    park,
-    kim,
-    lee
-}
