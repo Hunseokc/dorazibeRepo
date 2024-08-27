@@ -1,16 +1,16 @@
-package ch06.test.test16;
+package ch06.test.test17;
 
 public class Printer {
-    void println(int value){
+    static void println(int value){
         System.out.println(value);
     }
-    void println(boolean value){
+    static void println(boolean value){
         System.out.println(value);
     }
-    void println(double value){
+    static void println(double value){
         System.out.println(value);
     }
-    void println(String value){
+    static void println(String value){
         System.out.println(value);
     }
 }

@@ -1,4 +1,4 @@
-package ch07.sec03;
+package ch07.sec03.ex1;
 
 public class SmartPhone extends Phone {
 

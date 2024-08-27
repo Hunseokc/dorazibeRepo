@@ -1,4 +1,4 @@
-package ch06.test.test13;
+package ch06.test.test14;
 
 public class Member {
     String name;
@@ -6,11 +6,9 @@ public class Member {
     String password;
     int age;
 
-    Member (String name, String id, String password, int age) {
+    Member(String name, String id) {
         this.name = name;
         this.id = id;
-        this.password = password;
-        this.age = age;
     }
 
 }

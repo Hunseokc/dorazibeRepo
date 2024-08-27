@@ -1,4 +1,4 @@
-package ch07.sec4.ex1;
+package ch07.sec04.ex1;
 
 public class Calculator {
     public double areaCircle(double r) {

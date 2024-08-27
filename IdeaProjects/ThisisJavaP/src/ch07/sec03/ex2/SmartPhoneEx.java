@@ -1,4 +1,4 @@
-package ch07.sec03.ex1;
+package ch07.sec03.ex2;
 
 public class SmartPhoneEx {
     public static void main(String[] args) {
