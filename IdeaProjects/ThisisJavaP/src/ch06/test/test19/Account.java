@@ -1,4 +1,4 @@
-package ch06.test.test19;
+package ch06.test.test18;
 
 public class Account {
     private int balance;
