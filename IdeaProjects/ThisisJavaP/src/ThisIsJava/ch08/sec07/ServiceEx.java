@@ -1,4 +1,4 @@
-package ch08.sec07;
+package ThisIsJava.ch08.sec07;
 
 public class ServiceEx {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ch08.sec09;
+package ThisIsJava.ch08.sec09;
 
 public class ExtendsEx {
     public static void main(String[] args) {

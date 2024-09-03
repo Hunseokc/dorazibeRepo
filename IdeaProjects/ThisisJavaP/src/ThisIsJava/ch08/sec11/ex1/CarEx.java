@@ -1,4 +1,4 @@
-package ch08.sec11.ex1;
+package ThisIsJava.ch08.sec11.ex1;
 
 public class CarEx {
     public static void main(String[] args) {

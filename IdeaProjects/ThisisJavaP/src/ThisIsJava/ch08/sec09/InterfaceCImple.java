@@ -1,4 +1,4 @@
-package ch08.sec09;
+package ThisIsJava.ch08.sec09;
 
 public class InterfaceCImple implements InterfaceC {
     public void methodA() {

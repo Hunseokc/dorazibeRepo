@@ -1,4 +1,4 @@
-package ch08.sec08;
+package ThisIsJava.ch08.sec08;
 
 public class SmartTv implements RemoteControl, Searchable{
     @Override

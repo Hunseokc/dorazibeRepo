@@ -1,4 +1,4 @@
-package ch08.sec12;
+package ThisIsJava.ch08.sec12;
 
 public class InstanceofEx {
     public static void main(String[] args) {
