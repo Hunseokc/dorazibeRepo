@@ -1,0 +1,38 @@
+.profile_img {                
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile_header {
+    font-size: 40px;
+    margin-bottom: auto; 
+    color: seagreen; 
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.profile_textRed {
+    color: red; 
+    font-weight: 500;
+}
+
+.profile_header2 {
+    font-size: 35px;    
+    margin-bottom: -8px;
+}
+
+.box {
+width: 100px;
+height: 100px;
+background-color: slategray;
+margin: 30px;
+padding: 5px;
+border-radius: 15px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+font-size: 15px;
+box-shadow: 5px 5px 3px black;
+}
