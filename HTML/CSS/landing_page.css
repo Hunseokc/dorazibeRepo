@@ -1,0 +1,251 @@
+div,img {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+html {
+    line-height: 1.15;
+}
+
+h1,h2,p,h5 {
+    margin: 5px 0px 5px 0px;
+}
+
+h5 {
+    font-weight: 400;
+}
+
+.main-container {
+    background-color: rgb(77, 100, 168);
+    color: white;
+    width: 100vw;
+    max-width: 1200px;
+    height: 2000px;
+}
+
+.top-layer {
+    position: relative;
+    float: left;
+    background-image: linear-gradient(0deg, #4040af, hwb(203 37% 0%));
+    width: 100%;
+    height: 240px;
+}
+
+.text-button-box {
+    float: left;
+    padding: 7%;
+    font-family: "Helvetica";
+    font-size: 0.5em;
+    font-weight: 100;
+}
+
+.button-black {
+    background-color: #3f3f3f;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 70px;
+    padding: 3px 8px 3px 8px;
+    margin-top: 10px;
+    font-size: 8px;
+    font-weight: lighter;
+}
+
+.main-img {
+    display: block;
+    float: right;
+    margin-top: 33px;
+    margin-right: 50px;
+    width: 190px;
+}
+
+.second-layer {
+    float: left;
+    color: black;
+    background-color: white;
+    width: 100%;
+    height: 110px;
+}
+
+.second-layer>.text-button-box {
+    float: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.third-layer {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 230px;
+    text-align: center;
+}
+
+.third-layer>.text-button-box {
+    float: none;
+    text-align: center;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.icon-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box { 
+    text-align: center;
+    margin: 0px 20px 0px 20px
+}
+
+.icon-box p {font-size: 0.2em;}
+
+.icon-box i {
+    font-weight: 100;
+    color: #4040af;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 14px 0px 0px 2px;
+    margin-top: 20px;
+}
+
+.pic-layer {
+    float: left;
+    background-color: white;
+    width: 100%;
+    height: 500px;
+}
+
+.pic-layer>.text-button-box {
+    color: black;
+    float: none;
+    text-align: center;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.pic-box {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    height: 90%;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.pic-small-box {
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+
+.pic-small-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.pic-small-box p {
+    position: absolute;
+    color: white;
+    text-align: left;
+    margin: 30px 0px 0px 30px;
+    font-size: 0.6em;
+    line-height: 2;
+    z-index: 10;
+}
+
+.pic-small-box span {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.white-box {
+    position: absolute;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    border: 0px solid white;
+    transition: all 2s;
+}
+
+.last-layer {
+    float: left;
+    background-color: white;
+    width: 100%;
+    height: 150px;
+}
+
+.last-layer>.icon-text-container>.icon-box>i {
+    background-color: #4040af;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0.3;
+    z-index: 2;
+}
+
+.overlay-black {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,3);
+    opacity: 0.5;
+    margin-top: 100%;
+    transition: all 0.8s;
+}
+
+.overlay-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.white-box:hover {
+    border: 15px solid white;
+}
+
+
+
+@media screen and (max-width: 678px){
+    .top-layer {
+        text-align: center;
+        height: 264px;
+    }
+    .top-layer>.text-button-box {
+        float: none;
+        padding: 20px;
+    } 
+    .main-img {
+        float: none;
+        width: 110px;
+        margin: auto;
+        margin-top: 5px;
+    }
+    .pic-layer {
+        height: 950px;
+    }
+    .pic-box {
+        width: 60%;
+        height: 45%;
+    }
+    .pic-small-box {
+        float: none;
+        width: 100%;
+    }
+
+}

@@ -1,15 +1,55 @@
+div {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+html {
+    line-height: 1.15;
+}
+
 .main-background {
+    display: flexbox;
     width: 100%;
     height: 400px;
-    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url(../img/shoes.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/shoes.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;   
+    background-position: center;
     padding: 1px;
     position: relative;
 }
 
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    background-color: #ff6e6e;
+    color: white;
+}
+
+.top_nav-menus {
+    display: flex;
+    margin: auto;
+    font-size: larger;
+    width: 15%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
 .main-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 60%;
     color: white;
     font-size: 40px;
     margin-top: 15%;
@@ -18,6 +58,10 @@
 }
 
 .main-content {
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    position: absolute;
     color: white;
     text-align: center;
     margin-top: 10px;
@@ -44,12 +88,30 @@
     width: 350px;
     height: 130px;
     position: absolute;
-    left: 0; right: 0; margin: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
     bottom: -120px;
 }
 
 .desctext {
     text-align: center;
     font-size: 12px;
-    
+
+}
+
+@media screen and (max-width: 1000px){
+    .main-title {
+        font-size: 20px;
+    }
+    .top_nav-menus {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 668px){
+    .main-title {
+        font-size: 15px;
+    }
 }

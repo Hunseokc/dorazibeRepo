@@ -1,0 +1,105 @@
+div {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+html {
+    line-height: 1.15;
+}
+
+h2 {
+    margin: auto;
+}
+
+.main-container i {
+    background-color: burlywood;    
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    padding: 33px 0px 0px 4px;
+    box-sizing: border-box;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.main-container {
+    width: 100vw;
+    max-width: 1200px;
+    height: 800px;
+}
+
+.small-box {
+    float : left;
+    width: 25%;
+    height: 25%;
+    padding: 15px;
+    text-align: center;
+}
+
+.shop-bg {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.shop-container {
+    display: flex;
+    width: 95%;
+    margin: auto;
+}
+
+.shop-item {
+    width: 33%;
+    padding: 15px;
+}
+
+.shop-item img {
+    width: 100%;
+    display:block;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0.7;
+    font-size: 0.8em;
+    padding: 10px;
+    top: 100%;
+    transition-timing-function: all 2s;
+}
+
+.overlay-black {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,3);
+    opacity: 0.5;
+    margin-top: 100%;
+    transition: all 1s;
+}
+
+.overlay-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.overlay-wrap:hover {
+    .overlay-black{   margin-top: 50%; }
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .small-box { width: 50%;}
+}
+
+@media screen and (max-width: 768px){
+    .small-box { width: 100%;}
+}
