@@ -90,11 +90,33 @@ h2 {
     overflow: hidden;
 }
 
+
+
+
 .overlay-wrap:hover {
     .overlay-black{   margin-top: 50%; }
 }
 
 
+progress {
+    -webkit-appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    border: 1px solid #eeeeee;
+    height: 28px;
+    width: 200px;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-value {
+    background-color: #fdd4d6;
+    border-radius: 0px;
+    height: 28px;
+    width: 48px;
+}
 
 @media screen and (max-width: 1200px){
     .small-box { width: 50%;}

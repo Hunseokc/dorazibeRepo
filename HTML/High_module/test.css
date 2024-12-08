@@ -1,0 +1,180 @@
+@charset "UTF-8";
+.box li {
+  list-style: none;
+  width: 400px;
+  height: 80px;
+  padding: 27px;
+  border: 0.1px solid #eee;
+  background-color: white;
+  margin-bottom: -1px;
+  color: black;
+}
+.box li span {
+  font-weight: bold;
+}
+.box li:active {
+  width: 400px;
+  height: 80px;
+  padding: 27px;
+  border: 0.1px solid #eee;
+  background-color: rgb(67, 121, 192);
+  margin-bottom: -1px;
+  color: white;
+}
+.box li:active span {
+  font-weight: bold;
+}
+
+.alert-box-yellow, .alert-box-blue, .alert-box-green {
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.alert-box-green {
+  width: 400px;
+  height: 80px;
+  padding: 27px;
+  border: none;
+  background-color: rgb(198, 255, 198);
+  margin-bottom: -1px;
+  color: rgb(78, 149, 78);
+}
+.alert-box-green span {
+  font-weight: bold;
+}
+
+.alert-box-blue {
+  width: 400px;
+  height: 80px;
+  padding: 27px;
+  border: none;
+  background-color: #c1e2fc;
+  margin-bottom: -1px;
+  color: rgb(67, 158, 255);
+}
+.alert-box-blue span {
+  font-weight: bold;
+}
+
+.alert-box-yellow {
+  width: 400px;
+  height: 80px;
+  padding: 27px;
+  border: none;
+  background-color: rgb(240, 255, 205);
+  margin-bottom: -1px;
+  color: rgb(123, 127, 11);
+}
+.alert-box-yellow span {
+  font-weight: bold;
+}
+
+.myrow {
+  width: 100%;
+  display: flex;
+}
+.myrow .col-6 {
+  padding: 15px;
+  width: 50%;
+}
+.myrow .col-4 {
+  padding: 15px;
+  width: 33.33%;
+}
+.myrow .col-3 {
+  padding: 15px;
+  width: 25%;
+}
+@media screen and (max-width: 768px) {
+  .myrow .col-md-4 {
+    padding: 15px;
+    width: 33.33%;
+  }
+}
+
+@keyframes 흔들림 {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes 흔들커짐 {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(30deg) scale(1.5);
+  }
+}
+@keyframes 글자날아옴 {
+  0% {
+    transform: translatex(0px);
+  }
+  25% {
+    transform: translatex(200px) skewX(-30deg);
+  }
+  100% {
+    transform: translatex(120px);
+  }
+}
+.ani-btn:hover {
+  animation-name: 흔들림;
+  animation-duration: 0.5s;
+}
+
+.ani-plus {
+  font-size: 70px;
+  width: 84px;
+  margin: 25px auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ani-plus:hover {
+  animation-name: 흔들커짐;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.black-menu {
+  background-color: black;
+  position: absolute;
+  left: -15%;
+  width: 300px;
+  height: 500px;
+  padding: 10px;
+  transition: all 1s;
+  color: white;
+}
+.black-menu h2 {
+  text-align: end;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+.black-menu:hover {
+  left: 0%;
+}
+.black-menu:hover h2 {
+  text-align: center;
+}
+.black-menu:hover h4 {
+  animation-name: 글자날아옴;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}/*# sourceMappingURL=test.css.map */

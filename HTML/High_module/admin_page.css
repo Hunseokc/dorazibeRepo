@@ -1,0 +1,144 @@
+.side-bar {
+  transition: all 1s;
+  background-color: #3535ca;
+  width: 150px;
+  height: 100%;
+  position: fixed;
+  z-index: 5;
+  transform: translateX(-110px);
+}
+.side-bar i {
+  transform: translateX(105px);
+}
+.side-bar span {
+  transform: translateX(-25px);
+}
+
+.icon-text {
+  font-size: 15px;
+  color: white;
+  margin: 12px 0px 0px 15px;
+}
+.icon-text i {
+  margin-right: 7px;
+}
+
+.side-bar:hover {
+  transform: translateX(0px);
+}
+.side-bar:hover i {
+  transform: translateX(0px);
+}
+
+.content {
+  margin-left: 40px;
+  height: 100%;
+}
+.content .dashboard {
+  background-color: rgb(235, 235, 235);
+  padding: 20px;
+  height: 100%;
+}
+.content .dashboard h1 {
+  margin-top: 5px;
+}
+
+.alert-box-sky {
+  border-left: 3px solid rgb(143, 243, 250);
+  padding: 15px;
+  background-color: white;
+  position: relative;
+}
+.alert-box-sky i {
+  position: absolute;
+  bottom: 35%;
+  right: 10%;
+}
+.alert-box-sky p {
+  font-size: 0.8em;
+  margin-bottom: 6px;
+}
+.alert-box-sky h4 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.alert-box-green {
+  border-left: 3px solid green;
+  padding: 15px;
+  background-color: white;
+  position: relative;
+}
+.alert-box-green i {
+  position: absolute;
+  bottom: 35%;
+  right: 10%;
+}
+.alert-box-green p {
+  font-size: 0.8em;
+  margin-bottom: 6px;
+}
+.alert-box-green h4 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.alert-box-blue {
+  border-left: 3px solid blue;
+  padding: 15px;
+  background-color: white;
+  position: relative;
+}
+.alert-box-blue i {
+  position: absolute;
+  bottom: 35%;
+  right: 10%;
+}
+.alert-box-blue p {
+  font-size: 0.8em;
+  margin-bottom: 6px;
+}
+.alert-box-blue h4 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.alert-box-yellow {
+  border-left: 3px solid yellow;
+  padding: 15px;
+  background-color: white;
+  position: relative;
+}
+.alert-box-yellow i {
+  position: absolute;
+  bottom: 35%;
+  right: 10%;
+}
+.alert-box-yellow p {
+  font-size: 0.8em;
+  margin-bottom: 6px;
+}
+.alert-box-yellow h4 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.tab-box {
+  background-color: white;
+  margin-top: 20px;
+  border: 0.5px solid hsl(0, 0%, 91%);
+  border-radius: 10px;
+}
+.tab-box .tab-box-nav {
+  background-color: rgb(244, 244, 244);
+  padding: 10px;
+  border-bottom: 1px solid hwb(0 87% 13%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.tab-box .tab-box-nav h6 {
+  font-weight: 600;
+}
+.tab-box .tab-box-content {
+  padding: 15px;
+}/*# sourceMappingURL=admin_page.css.map */

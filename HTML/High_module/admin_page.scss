@@ -1,0 +1,94 @@
+.side-bar {
+    transition: all 1s;
+    background-color: #3535ca;
+    width: 150px;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+    transform: translateX(-110px);
+    i {
+        transform: translateX(105px);
+    }
+    span {
+        transform: translateX(-25px);
+    }
+}
+
+.icon-text {
+    font-size: 15px;
+    color: white;
+    margin : 12px 0px 0px 15px;
+    i { 
+        margin-right: 7px;
+    }
+}
+
+.side-bar:hover {
+    transform: translateX(0px);
+    i {
+        transform: translateX(0px);
+    }
+}
+
+.content {
+    margin-left: 40px;
+    height: 100%;
+    .dashboard {
+        background-color: rgb(235, 235, 235);
+        padding: 20px;
+        height: 100%;
+        h1 { margin-top: 5px;}
+    }
+}
+
+@mixin alert-box($color) {
+    border-left: 3px solid $color;
+    padding: 15px;
+    background-color: white;
+    position: relative;
+    i { 
+        position: absolute;
+        bottom: 35%;
+        right: 10%;
+    }
+    p {
+        font-size: 0.8em;
+        margin-bottom: 6px;
+    }
+    h4 {
+        font-size: 1em;
+        font-weight: 600;
+    }
+}
+
+.alert-box-sky {
+    @include alert-box(rgb(143, 243, 250));
+}
+.alert-box-green {
+    @include alert-box(green);
+}
+.alert-box-blue {
+    @include alert-box(blue);
+}
+.alert-box-yellow {
+    @include alert-box(yellow);
+}
+
+.tab-box {
+    background-color: white;
+    margin-top: 20px;
+    border: 0.5px solid hsl(0, 0%, 91%);
+    border-radius: 10px;
+
+    .tab-box-nav {
+        background-color: rgb(244, 244, 244);
+        padding: 10px;
+        border-bottom: 1px solid hwb(0 87% 13%);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        h6 {font-weight: 600;}
+    }
+    .tab-box-content {
+        padding: 15px;
+    }
+}

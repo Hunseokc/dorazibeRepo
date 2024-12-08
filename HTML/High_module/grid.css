@@ -1,0 +1,51 @@
+@charset "UTF-8";
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-areas: "헤더 헤더 헤더 헤더" "사이드 바디 바디 바디" "사이드 바디 바디 바디";
+}
+
+.grid-container div {
+  border: 1px solid black;
+}
+
+.grid-nav {
+  grid-area: 헤더;
+}
+
+.grid-side {
+  grid-area: 사이드;
+}
+
+.grid-body {
+  grid-area: 바디;
+}
+
+.grid-small {
+  grid-area: 작;
+}
+
+.grid-container2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-areas: "바디 바디 . " "바디 바디 . " ". . . ";
+}
+
+img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-areas: "헤더 헤더 헤더 헤더" "사이드 사이드 사이드 사이드 " "바디 바디 바디 바디";
+  }
+  .grid-container2 {
+    grid-template-columns: 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-template-areas: "바디" " . " " . " " . " " . " " . ";
+  }
+}/*# sourceMappingURL=grid.css.map */

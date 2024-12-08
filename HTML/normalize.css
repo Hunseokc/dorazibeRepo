@@ -347,3 +347,14 @@ template {
 [hidden] {
   display: none;
 }
+
+div { 
+	box-sizing: border-box; 
+}
+body { 
+	margin: 0px; 
+}
+html {
+	line-height: 1.15;
+}
+

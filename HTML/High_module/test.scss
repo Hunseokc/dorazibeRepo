@@ -1,0 +1,138 @@
+$border-default: 0.1px solid #eee;
+
+@mixin main-box($bg-color, $f-color, $border) {
+    width: 400px;
+    height: 80px;
+    padding: 27px;
+    border: $border;
+    background-color: $bg-color;
+    margin-bottom: -1px;
+    color: $f-color;
+    
+    span {
+        font-weight: bold;
+    }
+}
+
+.box {
+    li {
+    list-style: none;
+    @include main-box(white, black, $border-default);
+
+    &:active {
+        @include main-box(rgb(67, 121, 192), white, $border-default);
+    }
+    }
+}
+
+%alert-box {
+    border-radius: 5px;    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.alert-box-green {
+    @extend %alert-box;
+    @include main-box(rgb(198, 255, 198), rgb(78, 149, 78), none);
+}
+
+.alert-box-blue {
+    @include main-box(#c1e2fc, rgb(67, 158, 255), none);
+    @extend %alert-box;
+}
+
+.alert-box-yellow {
+    @include main-box(rgb(240, 255, 205), rgb(123, 127, 11), none);
+    @extend %alert-box;
+}
+
+@mixin col-n($width) {
+    
+}
+
+@mixin column($width) {
+    padding: 15px;
+    width: $width;
+}
+
+.myrow {
+    width: 100%;
+    display: flex;
+    .col-6 { @include column(50%) }
+    .col-4 { @include column(33.33%)  }
+    .col-3 { @include column(25%) }
+    .col-md-4 {
+        @media screen and (max-width: 768px){
+            @include column(33.33%)
+        }
+    }
+}
+
+@keyframes 흔들림 {
+    0% { transform : rotate(0);}
+    25% { transform : rotate(-10deg); }
+    50% { transform : rotate(10deg); }
+    75% { transform : rotate(-10deg); }
+    100% { transform : rotate(0);}
+}
+
+@keyframes 흔들커짐 {
+    0% { transform : rotate(0);}
+    25% { transform : rotate(-10deg); }
+    100% { transform : rotate(30deg) scale(1.5);}
+}
+
+@keyframes 글자날아옴 {
+    0% { transform: translatex(0px)}
+    25% { transform : translatex(200px) skewX(-30deg)}
+    100% { transform : translatex(120px)}
+}
+
+.ani-btn:hover {
+    animation-name: 흔들림;
+    animation-duration: 0.5s;
+}
+
+.ani-plus {
+    font-size: 70px;
+    width: 84px;
+    margin: 25px auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ani-plus:hover {
+    animation-name: 흔들커짐;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+
+.black-menu {
+    background-color: black;
+    position: absolute;
+    left: -15%;
+    width: 300px;
+    height: 500px;
+    padding: 10px;
+    transition: all 1s; 
+    color: white;
+
+    h2 {
+        text-align: end;
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+}
+
+
+.black-menu:hover {
+    left: 0%;
+    h2 {
+        text-align: center;
+    }
+    h4 {
+        animation-name: 글자날아옴;
+        animation-duration: 1s;
+        animation-fill-mode: forwards; 
+    }
+}
